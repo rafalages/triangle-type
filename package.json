@@ -1,0 +1,25 @@
+{
+  "name": "triangle-type",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafalages/triangle-type.git"
+  },
+  "author": "rafalages",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafalages/triangle-type/issues"
+  },
+  "homepage": "https://github.com/rafalages/triangle-type#readme",
+  "devDependencies": {
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.3.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.0.2"
+  }
+}

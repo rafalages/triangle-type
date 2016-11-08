@@ -1,1 +1,1 @@
-# triangle-type
+# Triangle Type
