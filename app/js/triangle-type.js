@@ -3,7 +3,7 @@
   
   global.Triangle = function Triangle(){};
   
-  Triangle.prototype.checkType = function (a, b, c) {
+  Triangle.prototype.type = function (a, b, c) {
     var type = null;
   
     // first we need to validate if our parameters are numbers
