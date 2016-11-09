@@ -2,7 +2,7 @@
 
 This code checks the type of a triangle.
 
-## Use
+## Usage
 
 Just include triangle-type script in your page.
 ```html
@@ -11,7 +11,7 @@ Just include triangle-type script in your page.
 
 then call method type passing three number parameters
 ```javascript
-var t = new Triangle()
+var t = new Triangle();
 t.type(4, 4, 4); // > equilateral
 t.type(4, 5, 4); // > isoceles
 t.type(3, 4, 5); // > scalene
