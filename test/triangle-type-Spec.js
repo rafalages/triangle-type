@@ -76,4 +76,21 @@ describe("TriangleTypeSpec", function () {
       expect(t.isTriangle(7, 20, 7)).toBe(false);
     });
   });
+  
+  it("should return 'equilateral'", function () {
+    expect(t.type(20, 20, 20)).toEqual('equilateral');
+  });
+  it("should return 'isoceles'", function () {
+    expect(t.type(20, 10, 20)).toEqual('isoceles');
+  });
+  it("should return 'scalene'", function () {
+    expect(t.type(22, 25, 21)).toEqual('scalene');
+  });
+  it("should return 'not a triangle'", function () {
+    expect(t.type(20, 20, 200)).toEqual('not a triangle');
+  });
+  it("should return 'null'", function () {
+    expect(t.type(20, 20, ":)")).toBeNull();
+  });
+  
 });

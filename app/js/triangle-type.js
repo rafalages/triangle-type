@@ -8,7 +8,7 @@
   
     // first we need to validate if our parameters are numbers
     if (!this.validateNumberParam(a, b, c)) {
-      console.error("Invalid parameters: All parameters should be a numbers -- given: ", arguments);
+      console.error("Invalid parameters: All parameters should be a number -- given: ", arguments);
     
       // then check if its a equilateral
     } else if (this.isEquilateral(a, b, c)) {
@@ -25,7 +25,7 @@
     
       // otherwise its not a triangle
     } else {
-      console.error("It's not a Triangle: Given parameters don't form a triangle -- given: ", arguments);
+      type = "not a triangle";
     }
     return type;
   };
@@ -51,9 +51,12 @@
   };
   
   Triangle.prototype.isIsosceles = function (a, b, c) {
+    // its better to call isEquilateral and isTriangle again than duplicate their logic
+    var isTriangle = this.isTriangle(a, b, c);
+    var isEquilateral = this.isEquilateral(a, b, c);
+    
     // verify if only 2 sides are identical
-    // its better to call isEquilateral again than duplicate its logic
-    return (a === b || b === c || c === a) && !this.isEquilateral(a, b, c);
+    return isTriangle && !isEquilateral && (a === b || b === c || c === a);
   };
   
   Triangle.prototype.isTriangle = function (a, b, c) {
