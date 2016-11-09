@@ -1,8 +1,8 @@
 {
   "name": "triangle-type",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "This code checks the type of a triangle.",
+  "main": "js/triangle-type.js",
   "scripts": {
     "test": "./node_modules/karma/bin/karma start karma.conf.js"
   },
@@ -11,7 +11,6 @@
     "url": "git+https://github.com/rafalages/triangle-type.git"
   },
   "author": "rafalages",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/rafalages/triangle-type/issues"
   },
